@@ -3,7 +3,7 @@ package route
 import (
 	"os"
 
-	"github.com/IceWhaleTech/CasaOS-Gateway/service"
+	"github.com/Vioneta/VionetaOS-Gateway/service"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 )

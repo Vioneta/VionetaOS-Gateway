@@ -1,9 +1,9 @@
-module github.com/IceWhaleTech/CasaOS-Gateway
+module github.com/Vioneta/VionetaOS-Gateway
 
 go 1.20
 
 require (
-	github.com/IceWhaleTech/CasaOS-Common v0.4.8-alpha9
+	github.com/Vioneta/VionetaOS-Common v0.4.8-alpha9
 	github.com/gin-contrib/gzip v0.0.6
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.18.2

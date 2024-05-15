@@ -9,10 +9,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
+	"github.com/Vioneta/VionetaOS-Common/utils/logger"
 
-	"github.com/IceWhaleTech/CasaOS-Common/model"
-	"github.com/IceWhaleTech/CasaOS-Gateway/service"
+	"github.com/Vioneta/VionetaOS-Common/model"
+	"github.com/Vioneta/VionetaOS-Gateway/service"
 	"github.com/gin-gonic/gin"
 	"gotest.tools/v3/assert"
 )

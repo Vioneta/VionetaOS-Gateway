@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/IceWhaleTech/CasaOS-Common/external"
-	"github.com/IceWhaleTech/CasaOS-Common/middleware"
-	"github.com/IceWhaleTech/CasaOS-Common/model"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/common_err"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/jwt"
-	"github.com/IceWhaleTech/CasaOS-Gateway/service"
+	"github.com/Vioneta/VionetaOS-Common/external"
+	"github.com/Vioneta/VionetaOS-Common/middleware"
+	"github.com/Vioneta/VionetaOS-Common/model"
+	"github.com/Vioneta/VionetaOS-Common/utils/common_err"
+	"github.com/Vioneta/VionetaOS-Common/utils/jwt"
+	"github.com/Vioneta/VionetaOS-Gateway/service"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 )

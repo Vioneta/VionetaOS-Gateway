@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/IceWhaleTech/CasaOS-Common/model"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
+	"github.com/Vioneta/VionetaOS-Common/model"
+	"github.com/Vioneta/VionetaOS-Common/utils/logger"
 	"gotest.tools/assert"
 )
 

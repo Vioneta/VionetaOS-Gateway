@@ -1,5 +1,5 @@
-github.com/Vioneta/VionetaOS-Common v0.4.8-alpha9 h1:81CluyrIFBjO49XeI0mILxtyQ7XXDKpc3vOtFx5Piwk=
-github.com/Vioneta/VionetaOS-Common v0.4.8-alpha9/go.mod h1:2IuYyy5qW1BE6jqC6M+tOU+WtUec1K565rLATBJ9p/0=
+github.com/Vioneta/VionetaOS-Common v0.1.0 h1:81CluyrIFBjO49XeI0mILxtyQ7XXDKpc3vOtFx5Piwk=
+github.com/Vioneta/VionetaOS-Common v0.1.0/go.mod h1:2IuYyy5qW1BE6jqC6M+tOU+WtUec1K565rLATBJ9p/0=
 github.com/benbjohnson/clock v1.3.1 h1:Heo0FGXzOxUHquZbraxt+tT7UXVDhesUQH5ISbsOkCQ=
 github.com/benbjohnson/clock v1.3.1/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/bytedance/sonic v1.5.0/go.mod h1:ED5hyg4y6t3/9Ku1R6dU/4KyJ48DZ4jPhfY1O2AihPM=

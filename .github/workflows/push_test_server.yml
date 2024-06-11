@@ -9,8 +9,7 @@ jobs:
   goreleaser:
     runs-on: ubuntu-22.04
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -18,18 +17,18 @@ jobs:
         run: sudo apt install --yes git
       - name: git global
         run: sudo git config --global --add safe.directory '*'
-      
+
       - name: Fetch all tags
         run: sudo git fetch --force --tags
-      
+
       - name: set version
-        run: sudo git tag v99.99.99-alpha 
-      
+        run: sudo git tag v99.99.99-alpha
+
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: 'stable'
-      
+          go-version: "stable"
+
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v4
         with:
@@ -41,19 +40,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Your GoReleaser Pro key, if you are using the 'goreleaser-pro' distribution
           # GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
-      
+
       - name: remove migration file
         run: find . -type f  \( -name '*migration*' \) -delete
-      
+
       - name: install sshpass
         run: sudo apt install sshpass --yes
-        
+
       - name: ZeroTier
         uses: zerotier/github-action@v1.0.1
         with:
-            network_id: ${{ secrets.ZEROTIER_NETWORK_ID }}
-            auth_token: ${{ secrets.ZEROTIER_CENTRAL_TOKEN }}
-            
+          network_id: ${{ secrets.ZEROTIER_NETWORK_ID }}
+          auth_token: ${{ secrets.ZEROTIER_CENTRAL_TOKEN }}
+
       - name: ping host
         shell: bash
         run: |
@@ -64,7 +63,7 @@ jobs:
             let count=count-1
           done
           echo "ping success"
-      
+
       - name: copy tar to target host
         shell: bash
         run: |
@@ -72,4 +71,4 @@ jobs:
           echo "ping success"
       - name: send message
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"msg_type":"text","content":{"text":"CasaOS-Gateway updated"}}' ${{ secrets.SSH_ROBOT_URL }}
+          curl -X POST -H "Content-Type: application/json" -d '{"msg_type":"text","content":{"text":"VionetaOS-Gateway updated"}}' ${{ secrets.SSH_ROBOT_URL }}

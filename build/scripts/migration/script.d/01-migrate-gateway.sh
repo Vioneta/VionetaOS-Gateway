@@ -64,7 +64,7 @@ __get_download_domain(){
        region=$(curl --connect-timeout 2 -s https://ifconfig.io/country_code || echo "")
     fi
     if [[ "${region}" = "China" ]] || [[ "${region}" = "CN" ]]; then
-        echo "https://casaos.oss-cn-shanghai.aliyuncs.com/"
+        echo "https://vionetaos.oss-cn-shanghai.aliyuncs.com/"
     else
         echo "https://github.com/"
     fi
@@ -77,10 +77,10 @@ BUILD_PATH=$(dirname "${BASH_SOURCE[0]}")/../../..
 readonly BUILD_PATH
 readonly SOURCE_ROOT=${BUILD_PATH}/sysroot
 
-readonly APP_NAME="casaos-gateway"
-readonly APP_NAME_FORMAL="CasaOS-Gateway"
+readonly APP_NAME="vionetaos-gateway"
+readonly APP_NAME_FORMAL="VionetaOS-Gateway"
 readonly APP_NAME_SHORT="gateway"
-readonly APP_NAME_LEGACY="casaos"
+readonly APP_NAME_LEGACY="vionetaos"
 
 # check if migration is needed
 readonly SOURCE_BIN_PATH=${SOURCE_ROOT}/usr/bin
@@ -177,7 +177,7 @@ pushd "${MIGRATION_SERVICE_DIR}"
             continue
         fi
 
-        MIGRATION_TOOL_URL=${DOWNLOAD_DOMAIN}IceWhaleTech/"${APP_NAME_FORMAL}"/releases/download/"${VER2}"/linux-"${ARCH}"-"${APP_NAME}"-migration-tool-"${VER2}".tar.gz
+        MIGRATION_TOOL_URL=${DOWNLOAD_DOMAIN}Vioneta/"${APP_NAME_FORMAL}"/releases/download/"${VER2}"/linux-"${ARCH}"-"${APP_NAME}"-migration-tool-"${VER2}".tar.gz
         __info "Dowloading ${MIGRATION_TOOL_URL}..."
         curl -sL -O "${MIGRATION_TOOL_URL}"
     done

@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+Description=VionetaOS Gateway
+
+[Service]
+ExecStartPre=/usr/bin/vionetaos-gateway -v
+ExecStart=/usr/bin/vionetaos-gateway
+PIDFile=/var/run/vionetaos/gateway.pid
+Restart=always
+Type=notify
+
+[Install]
+WantedBy=multi-user.target
